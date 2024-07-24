@@ -14,7 +14,7 @@ function startExerciseTimer(duration) {
         if (timer <= 0) {
             clearInterval(countdown);
             ringAlarm();
-            countdownElement.textContent = 'Tempo esgotado!';
+            countdownElement.textContent = 'Boaaa, você conseguiu!!';
         } else {
             // Atualizar o elemento de exibição do temporizador
             let minutes = Math.floor(timer / 60000);
@@ -30,9 +30,10 @@ function startExerciseTimer(duration) {
 // Evento para quando o botão é clicado
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('startTimerButton').addEventListener('click', function() {
-        const duration = parseInt(prompt("Defina o tempo para o exercício em segundos:"), 10) * 1000; // Converter para milissegundos
-        if (!isNaN(duration)) {
-            startExerciseTimer(duration);
+        const durationInMinutes = parseInt(prompt("Defina o tempo para o exercício em minutos:"), 10); // Entrada em minutos
+        if (!isNaN(durationInMinutes)) {
+            const durationInMilliseconds = durationInMinutes * 60000; // Converter minutos para milissegundos
+            startExerciseTimer(durationInMilliseconds);
         }
     });
 });
