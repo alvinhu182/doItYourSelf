@@ -1,0 +1,49 @@
+body {
+    font-family: 'Arial', sans-serif;
+   
+}
+.navbar-brand {
+    font-weight: bold;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+main {
+    background-color:aliceblue;
+}
+
+/* Adicione estilos específicos para o botão do temporizador ou outras partes do site */
+#startTimerButton {
+    /* Exemplo de estilo para o botão */
+    font-size: 1em;
+    padding: 10px 20px;
+    margin-top: 20px;
+    /* Mais estilos podem ser adicionados conforme necessário */
+}
+
+#timerDisplay {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+
+
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+/* Estiliza o label para que o texto fique com background verde quando o checkbox está marcado */
+
+
+

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do It Yourself - Exercícios em Casa</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+   <script src="assets/scripts/script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Header com Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="#">Do It Yourself</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#aerobic-training">Treino Aeróbico</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#strength-training">Treino de Força</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#light-training">Treino Leve</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#additional-tips">Dicas</a>
+                </li>
+               
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Conteúdo principal do site -->
+<main class="container">
+    <section id="home" class="mt-5">
+        <h2 class="text-center mb-4">Bem-vindo ao Do It Yourself</h2>
+        <p class="text-center">Exercícios para emagrecimento em casa, sem auxílio de aparelhos.</p>
+    </section>
+
+    <!-- Treino Aeróbico -->
+    <section id="aerobic-training" class="mt-5">
+        <h2 class="text-center mb-4">Segunda, Quarta e Sexta: Treino Aeróbico</h2>
+      <!-- Botão para iniciar o temporizador do exercício -->
+<div class="text-center mt-5">
+    <button id="startTimerButton" class="btn btn-primary">Iniciar Temporizador</button>
+    <div id="timerDisplay" class="mt-3">Tempo restante: --:--</div>
+</div>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Aquecimento (5 minutos)</h3>
+                    <label onclick="toggleDone('Aquecimento')">
+                        <input type="checkbox" id="checkboxAquecimento">
+                        <strong>Aquecimento</strong> - Como fazer: Marcha estacionária (simular uma caminhada no lugar)
+                    </label>
+                
+                
+            </div>
+            <div class="col-md-6">
+                <h3>Exercícios</h3>
+                <ol>
+                    <li>
+                        <label onclick="toggleDone('Polichinelos')">
+                            <input type="checkbox" id="checkboxPolichinelos">
+                            <strong>Polichinelos</strong> - Como fazer: Fique em pé com os pés juntos e as mãos ao lado do corpo. Pule, abrindo as pernas e levantando os braços acima da cabeça. Retorne à posição inicial. - Repetições: 3 séries de 15 repetições
+                        </label>
+                    </li>
+                    <li>
+                        <label onclick="toggleDone('Caminhada')">
+                            <input type="checkbox" id="checkboxCaminhada">
+                            <strong>Caminhada rápida ou Corrida leve no lugar</strong> - Como fazer: Caminhe ou corra no lugar, elevando os joelhos. - Repetições: 3 séries de 1 minuto cada
+                        </label>
+                    </li>
+                    <li>
+                        <label onclick="toggleDone('SubirEscada')">
+                            <input type="checkbox" id="checkboxSubirEscada">
+                            <strong>Subir e Descer Escadas</strong> - Como fazer: Suba e desça escadas, se houver disponibilidade. - Repetições: 5 minutos
+                        </label>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h3>Desaceleração (5 minutos)</h3>
+                <label onclick="toggleDone('Caminhada')">
+                    <input type="checkbox" id="checkboxCaminhada">
+                    <strong>Caminhada lenta no lugar</strong> - Como fazer: Marcha estacionária (simular uma caminhada no lugar ou caminhar devagar)
+                </label>
+               
+                
+            </div>
+            
+        </div>
+        
+    </section>
+
+    <!-- Treino de Força -->
+    <section id="strength-training" class="mt-5">
+        <h2 class="text-center mb-4">Terça, Quinta e Sábado: Treino de Força</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Aquecimento (5 minutos)</h3>
+                <ul>
+                    <label onclick="toggleDone('Alongamento')">
+                        <input type="checkbox" id="checkboxAlongamento">
+                        <strong>Alongamento</strong> - Como fazer:  Alongamento leve por 5 minutos
+                    </label>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3>Exercícios</h3>
+                <ol>
+                    <li>
+                        <label onclick="toggleDone('Agachamentos')">
+                            <input type="checkbox" id="checkboxAgachamentos">
+                            <strong>Agachamentos</strong> - Como fazer: Fique em pé com os pés afastados na largura dos ombros. Dobre os joelhos e empurre os quadris para trás como se fosse sentar em uma cadeira. Retorne à posição inicial. - Repetições: 3 séries de 10 repetições
+                        </label>
+                    </li>
+                    <li>
+                        <label onclick="toggleDone('Flexoes')">
+                            <input type="checkbox" id="checkboxFlexoes">
+                            <strong>Flexões de braço (modificadas)</strong> - Como fazer: Deite-se de barriga para baixo, coloque as mãos no chão na largura dos ombros e apoie os joelhos no chão. Empurre o corpo para cima e para baixo, mantendo uma linha reta dos ombros aos joelhos. - Repetições: 3 séries de 5-10 repetições
+                        </label>
+                    </li>
+                    <li>
+                        <label onclick="toggleDone('Prancha')">
+                            <input type="checkbox" id="checkboxPrancha">
+                            <strong>Prancha</strong> - Como fazer: Deite-se de bruços, apoie-se nos antebraços e nos dedos dos pés, mantendo o corpo em linha reta. - Repetições: Segure por 20-30 segundos, 3 vezes
+                        </label>
+                    </li>
+                    <li>
+                        <label onclick="toggleDone('Abdominais')">
+                            <input type="checkbox" id="checkboxAbdominais">
+                            <strong>Abdominais (Crunches)</strong> - Como fazer: Deite-se de costas com os joelhos dobrados e os pés no chão. Levante os ombros do chão usando os músculos abdominais. - Repetições: 3 séries de 10 repetições
+                        </label>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h3>Desaceleração (5 minutos)</h3>
+                <ul>
+                    <label onclick="toggleDone('Alongamento')">
+                        <input type="checkbox" id="checkboxAlongamento">
+                        <strong>Alongamento</strong> - Como fazer:  Alongamento leve por 5 minutos
+                    </label>
+                </ul> 
+            </div>
+        </div>
+    </section>
+    <!-- Domingo: Treino Leve ou Descanso Ativo -->
+    <section id="light-training" class="mt-5">
+        <h2 class="text-center mb-4">Domingo: Treino Leve ou Descanso Ativo</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <ul>
+                    <ulç> 
+                        <label onclick="toggleDone('CaminhadaLeve')">
+                            <input type="checkbox" id="checkboxCaminhadaLeve">
+                            <strong>Caminhada Leve</strong> - Como fazer:  Caminhada leve por 30 minutos
+                        </label>
+                    </ul>
+                    <ul>
+                        <label onclick="toggleDone('Alongamento')">
+                            <input type="checkbox" id="checkboxAlongamento">
+                            <strong>Alongamento</strong> - Como fazer:  Alongamento leve por 5 minutos
+                        </label>
+                    </ul>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dicas Adicionais -->
+    <section id="additional-tips" class="mt-5">
+        <h2 class="text-center mb-4">Dicas Adicionais</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <ul>
+                    <li><strong>Hidratação:</strong> Beba bastante água antes, durante e depois dos treinos.</li>
+                    <li><strong>Alimentação:</strong> Combine seu treino com uma alimentação equilibrada e saudável.</li>
+                    <li><strong>Consistência:</strong> Seja consistente com seus treinos e tenha paciência. A perda de peso leva tempo e dedicação.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-dark text-white">
+    <div class="container">
+        <p>Do It Yourself © 2023 - Todos os direitos reservados</p>
+    </div>
+</footer>
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
