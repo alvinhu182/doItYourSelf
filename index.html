@@ -8,6 +8,7 @@
    <script src="assets/scripts/script.js" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
+
 </head>
 <body>
 
@@ -48,15 +49,15 @@
     <!-- Treino Aeróbico -->
     <section id="aerobic-training" class="mt-5">
         <h2 class="text-center mb-4">Segunda, Quarta e Sexta: Treino Aeróbico</h2>
-      <!-- Botão para iniciar o temporizador do exercício -->
-<div class="text-center mt-5">
-    <button id="startTimerButton" class="btn btn-primary">Iniciar Temporizador</button>
-    <div id="timerDisplay" class="mt-3">Tempo restante: --:--</div>
-</div>
+        <!-- Botão para iniciar o temporizador do exercício -->
+        <div class="text-center mt-5">
+            <button id="startTimerButton" class="btn btn-primary">Iniciar Temporizador</button>
+            <div id="timerDisplay" class="mt-3">Tempo restante: --:--</div>
+        </div>
         <div class="row">
             <div class="col-md-6">
                 <h3>Aquecimento (5 minutos)</h3>
-                    <label onclick="toggleDone('Aquecimento')">
+                    <label >
                         <input type="checkbox" id="checkboxAquecimento">
                         <strong>Aquecimento</strong> - Como fazer: Marcha estacionária (simular uma caminhada no lugar)
                     </label>
@@ -66,42 +67,37 @@
             <div class="col-md-6">
                 <h3>Exercícios</h3>
                 <ol>
-                    <li>
-                        <label onclick="toggleDone('Polichinelos')">
+                    <ul>
+                        <label >
                             <input type="checkbox" id="checkboxPolichinelos">
                             <strong>Polichinelos</strong> - Como fazer: Fique em pé com os pés juntos e as mãos ao lado do corpo. Pule, abrindo as pernas e levantando os braços acima da cabeça. Retorne à posição inicial. - Repetições: 3 séries de 15 repetições
                         </label>
-                    </li>
-                    <li>
-                        <label onclick="toggleDone('Caminhada')">
+                    </ul>
+                    <ul>
+                        <label>
                             <input type="checkbox" id="checkboxCaminhada">
                             <strong>Caminhada rápida ou Corrida leve no lugar</strong> - Como fazer: Caminhe ou corra no lugar, elevando os joelhos. - Repetições: 3 séries de 1 minuto cada
                         </label>
-                    </li>
-                    <li>
-                        <label onclick="toggleDone('SubirEscada')">
+                    </ul>
+                    <ul>
+                        <label>
                             <input type="checkbox" id="checkboxSubirEscada">
                             <strong>Subir e Descer Escadas</strong> - Como fazer: Suba e desça escadas, se houver disponibilidade. - Repetições: 5 minutos
                         </label>
-                    </li>
+                    </ul>
                 </ol>
             </div>
         </div>
         <div class="row mt-4">
             <div class="col-md-12">
                 <h3>Desaceleração (5 minutos)</h3>
-                <label onclick="toggleDone('Caminhada')">
+                <label>
                     <input type="checkbox" id="checkboxCaminhada">
                     <strong>Caminhada lenta no lugar</strong> - Como fazer: Marcha estacionária (simular uma caminhada no lugar ou caminhar devagar)
-                </label>
-               
-                
+                </label>        
             </div>
-            
         </div>
-        
     </section>
-
     <!-- Treino de Força -->
     <section id="strength-training" class="mt-5">
         <h2 class="text-center mb-4">Terça, Quinta e Sábado: Treino de Força</h2>
@@ -109,7 +105,7 @@
             <div class="col-md-6">
                 <h3>Aquecimento (5 minutos)</h3>
                 <ul>
-                    <label onclick="toggleDone('Alongamento')">
+                    <label>
                         <input type="checkbox" id="checkboxAlongamento">
                         <strong>Alongamento</strong> - Como fazer:  Alongamento leve por 5 minutos
                     </label>
@@ -118,30 +114,30 @@
             <div class="col-md-6">
                 <h3>Exercícios</h3>
                 <ol>
-                    <li>
-                        <label onclick="toggleDone('Agachamentos')">
+                    <ul>
+                        <label>
                             <input type="checkbox" id="checkboxAgachamentos">
                             <strong>Agachamentos</strong> - Como fazer: Fique em pé com os pés afastados na largura dos ombros. Dobre os joelhos e empurre os quadris para trás como se fosse sentar em uma cadeira. Retorne à posição inicial. - Repetições: 3 séries de 10 repetições
                         </label>
-                    </li>
-                    <li>
-                        <label onclick="toggleDone('Flexoes')">
+                    </ul>
+                    <ul>
+                        <label>
                             <input type="checkbox" id="checkboxFlexoes">
                             <strong>Flexões de braço (modificadas)</strong> - Como fazer: Deite-se de barriga para baixo, coloque as mãos no chão na largura dos ombros e apoie os joelhos no chão. Empurre o corpo para cima e para baixo, mantendo uma linha reta dos ombros aos joelhos. - Repetições: 3 séries de 5-10 repetições
                         </label>
-                    </li>
-                    <li>
-                        <label onclick="toggleDone('Prancha')">
+                    </ul>
+                    <ul>
+                        <label>
                             <input type="checkbox" id="checkboxPrancha">
                             <strong>Prancha</strong> - Como fazer: Deite-se de bruços, apoie-se nos antebraços e nos dedos dos pés, mantendo o corpo em linha reta. - Repetições: Segure por 20-30 segundos, 3 vezes
                         </label>
-                    </li>
-                    <li>
-                        <label onclick="toggleDone('Abdominais')">
+                    </ul>
+                    <ul>
+                        <label>
                             <input type="checkbox" id="checkboxAbdominais">
                             <strong>Abdominais (Crunches)</strong> - Como fazer: Deite-se de costas com os joelhos dobrados e os pés no chão. Levante os ombros do chão usando os músculos abdominais. - Repetições: 3 séries de 10 repetições
                         </label>
-                    </li>
+                    </ul>
                 </ol>
             </div>
         </div>
@@ -149,8 +145,8 @@
             <div class="col-md-12">
                 <h3>Desaceleração (5 minutos)</h3>
                 <ul>
-                    <label onclick="toggleDone('Alongamento')">
-                        <input type="checkbox" id="checkboxAlongamento">
+                    <label>
+                        <input type="checkbox" id="checkboxAlongamento2">
                         <strong>Alongamento</strong> - Como fazer:  Alongamento leve por 5 minutos
                     </label>
                 </ul> 
@@ -163,15 +159,15 @@
         <div class="row">
             <div class="col-md-12">
                 <ul>
-                    <ulç> 
-                        <label onclick="toggleDone('CaminhadaLeve')">
+                    <ul> 
+                        <label>
                             <input type="checkbox" id="checkboxCaminhadaLeve">
                             <strong>Caminhada Leve</strong> - Como fazer:  Caminhada leve por 30 minutos
                         </label>
                     </ul>
                     <ul>
-                        <label onclick="toggleDone('Alongamento')">
-                            <input type="checkbox" id="checkboxAlongamento">
+                        <label>
+                            <input type="checkbox" id="checkboxAlongamento3">
                             <strong>Alongamento</strong> - Como fazer:  Alongamento leve por 5 minutos
                         </label>
                     </ul>
